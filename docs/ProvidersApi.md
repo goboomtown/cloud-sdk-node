@@ -21,25 +21,13 @@ Returns your *Provider* record
 ### Example
 ```javascript
 var BoomtownApi = require('boomtown-api');
-var defaultClient = BoomtownApi.ApiClient.default;
-
-// Configure API key authorization: X-Boomtown-Date
-var X-Boomtown-Date = defaultClient.authentications['X-Boomtown-Date'];
-X-Boomtown-Date.apiKey = "YOUR API KEY"
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//X-Boomtown-Date.apiKeyPrefix['X-Boomtown-Date'] = "Token"
-
-// Configure API key authorization: X-Boomtown-Signature
-var X-Boomtown-Signature = defaultClient.authentications['X-Boomtown-Signature'];
-X-Boomtown-Signature.apiKey = "YOUR API KEY"
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//X-Boomtown-Signature.apiKeyPrefix['X-Boomtown-Signature'] = "Token"
-
-// Configure API key authorization: X-Boomtown-Token
-var X-Boomtown-Token = defaultClient.authentications['X-Boomtown-Token'];
-X-Boomtown-Token.apiKey = "YOUR API KEY"
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//X-Boomtown-Token.apiKeyPrefix['X-Boomtown-Token'] = "Token"
+/**
+ * Initialize the ApiClient
+ * You will need to use your Cloud API credentials
+ * @type {BoomtownApi.ApiClient}
+ */
+BoomtownApi.ApiClient.instance.setApiToken("YOUR_BOOMTOWN_TOKEN");
+BoomtownApi.ApiClient.instance.setApiSecret("YOUR_BOOMTOWN_SECRET");
 
 var api = new BoomtownApi.ProvidersApi()
 
@@ -80,25 +68,13 @@ Returns collection of related *Merchant* records
 ### Example
 ```javascript
 var BoomtownApi = require('boomtown-api');
-var defaultClient = BoomtownApi.ApiClient.default;
-
-// Configure API key authorization: X-Boomtown-Date
-var X-Boomtown-Date = defaultClient.authentications['X-Boomtown-Date'];
-X-Boomtown-Date.apiKey = "YOUR API KEY"
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//X-Boomtown-Date.apiKeyPrefix['X-Boomtown-Date'] = "Token"
-
-// Configure API key authorization: X-Boomtown-Signature
-var X-Boomtown-Signature = defaultClient.authentications['X-Boomtown-Signature'];
-X-Boomtown-Signature.apiKey = "YOUR API KEY"
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//X-Boomtown-Signature.apiKeyPrefix['X-Boomtown-Signature'] = "Token"
-
-// Configure API key authorization: X-Boomtown-Token
-var X-Boomtown-Token = defaultClient.authentications['X-Boomtown-Token'];
-X-Boomtown-Token.apiKey = "YOUR API KEY"
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//X-Boomtown-Token.apiKeyPrefix['X-Boomtown-Token'] = "Token"
+/**
+ * Initialize the ApiClient
+ * You will need to use your Cloud API credentials
+ * @type {BoomtownApi.ApiClient}
+ */
+BoomtownApi.ApiClient.instance.setApiToken("YOUR_BOOMTOWN_TOKEN");
+BoomtownApi.ApiClient.instance.setApiSecret("YOUR_BOOMTOWN_SECRET");
 
 var api = new BoomtownApi.ProvidersApi()
 
@@ -139,25 +115,13 @@ Returns a *ProviderTeam* record
 ### Example
 ```javascript
 var BoomtownApi = require('boomtown-api');
-var defaultClient = BoomtownApi.ApiClient.default;
-
-// Configure API key authorization: X-Boomtown-Date
-var X-Boomtown-Date = defaultClient.authentications['X-Boomtown-Date'];
-X-Boomtown-Date.apiKey = "YOUR API KEY"
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//X-Boomtown-Date.apiKeyPrefix['X-Boomtown-Date'] = "Token"
-
-// Configure API key authorization: X-Boomtown-Signature
-var X-Boomtown-Signature = defaultClient.authentications['X-Boomtown-Signature'];
-X-Boomtown-Signature.apiKey = "YOUR API KEY"
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//X-Boomtown-Signature.apiKeyPrefix['X-Boomtown-Signature'] = "Token"
-
-// Configure API key authorization: X-Boomtown-Token
-var X-Boomtown-Token = defaultClient.authentications['X-Boomtown-Token'];
-X-Boomtown-Token.apiKey = "YOUR API KEY"
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//X-Boomtown-Token.apiKeyPrefix['X-Boomtown-Token'] = "Token"
+/**
+ * Initialize the ApiClient
+ * You will need to use your Cloud API credentials
+ * @type {BoomtownApi.ApiClient}
+ */
+BoomtownApi.ApiClient.instance.setApiToken("YOUR_BOOMTOWN_TOKEN");
+BoomtownApi.ApiClient.instance.setApiSecret("YOUR_BOOMTOWN_SECRET");
 
 var api = new BoomtownApi.ProvidersApi()
 
@@ -204,25 +168,13 @@ Returns a collection of *ProviderTeam* records
 ### Example
 ```javascript
 var BoomtownApi = require('boomtown-api');
-var defaultClient = BoomtownApi.ApiClient.default;
-
-// Configure API key authorization: X-Boomtown-Date
-var X-Boomtown-Date = defaultClient.authentications['X-Boomtown-Date'];
-X-Boomtown-Date.apiKey = "YOUR API KEY"
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//X-Boomtown-Date.apiKeyPrefix['X-Boomtown-Date'] = "Token"
-
-// Configure API key authorization: X-Boomtown-Signature
-var X-Boomtown-Signature = defaultClient.authentications['X-Boomtown-Signature'];
-X-Boomtown-Signature.apiKey = "YOUR API KEY"
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//X-Boomtown-Signature.apiKeyPrefix['X-Boomtown-Signature'] = "Token"
-
-// Configure API key authorization: X-Boomtown-Token
-var X-Boomtown-Token = defaultClient.authentications['X-Boomtown-Token'];
-X-Boomtown-Token.apiKey = "YOUR API KEY"
-// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
-//X-Boomtown-Token.apiKeyPrefix['X-Boomtown-Token'] = "Token"
+/**
+ * Initialize the ApiClient
+ * You will need to use your Cloud API credentials
+ * @type {BoomtownApi.ApiClient}
+ */
+BoomtownApi.ApiClient.instance.setApiToken("YOUR_BOOMTOWN_TOKEN");
+BoomtownApi.ApiClient.instance.setApiSecret("YOUR_BOOMTOWN_SECRET");
 
 var api = new BoomtownApi.ProvidersApi()
 
