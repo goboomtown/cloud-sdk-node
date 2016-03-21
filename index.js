@@ -1,28 +1,7 @@
-# Boomtown Cloud SDK for NODE (v1)
+// Public Key: 9F202C37C7249940386F
+// Private Key: 5b5577a123f1c1d7fa71edf4092430a4d79da959
 
-## Overview
-This repository contains the open source NODE SDK that allows you to access the Cloud API from your NODE app.
-Authentication uses a pre-shared key and secret, which is generated in our Admin Portal.
-
-## Getting Started
-To get started, clone this repository and add it to your NODE project
-Run npm install
-
-## API Key Generation
- - Log onto the Admin Portal (https://admin.goboomtown.com)
- - Click Providers in the left menu
- - Find your provider in the list
- - Double click your provider
- - Click API Settings, near the button of the configuration panel
- - Select Sandbox or Live, depending on the state of development
- - Click Re-Generate
- - Copy the access token and private-key, as provided in the pop-up dialog
-
-## Usage
-
-```javascript
 var BoomtownApi = require('./boomtown-api');
-
 /**
  * Initialize the ApiClient
  * You will need to use your Cloud API credentials
@@ -240,65 +219,3 @@ merchantApi.createMember(merchantCreate, function(err, data){
         })
     }
 });
-```
-
-
-## Documentation for API Endpoints
-
-All URIs are relative to *https://api.goboomtown.com/api/v2*
-
-Class | Method | HTTP request | Description
------------- | ------------- | ------------- | -------------
-*BoomtownApi.IssuesApi* | [**cancelIssue**](docs/IssuesApi.md#cancelIssue) | **POST** /issues/cancel/{issue_id} | Set a Issue to a cancelled status
-*BoomtownApi.IssuesApi* | [**createIssue**](docs/IssuesApi.md#createIssue) | **POST** /issues/create | Creates a new Issue
-*BoomtownApi.IssuesApi* | [**createIssueLog**](docs/IssuesApi.md#createIssueLog) | **POST** /issues/log/create/{issue_id} | Add a log to a Issue
-*BoomtownApi.IssuesApi* | [**getIssue**](docs/IssuesApi.md#getIssue) | **GET** /issues/get/{issue_id} | Returns a Issue
-*BoomtownApi.IssuesApi* | [**getIssueLogs**](docs/IssuesApi.md#getIssueLogs) | **GET** /issues/log/history/{issue_id} | Returns a collection of IssueLogs
-*BoomtownApi.IssuesApi* | [**getIssueMetaCategories**](docs/IssuesApi.md#getIssueMetaCategories) | **GET** /issues/meta/categories | Returns collection of categories
-*BoomtownApi.IssuesApi* | [**getIssueMetaResolutions**](docs/IssuesApi.md#getIssueMetaResolutions) | **GET** /issues/meta/resolutions | Returns collection of resolutions
-*BoomtownApi.IssuesApi* | [**getIssueMetaStatuses**](docs/IssuesApi.md#getIssueMetaStatuses) | **GET** /issues/meta/statuses | Returns collection of statuses
-*BoomtownApi.IssuesApi* | [**getIssueMetaTypes**](docs/IssuesApi.md#getIssueMetaTypes) | **GET** /issues/meta/types | Returns collection of types
-*BoomtownApi.IssuesApi* | [**getIssueStatusHistory**](docs/IssuesApi.md#getIssueStatusHistory) | **GET** /issues/status/history/{issue_id} | Returns a collection of IssueStatuses
-*BoomtownApi.IssuesApi* | [**getIssues**](docs/IssuesApi.md#getIssues) | **GET** /issues/get | Returns a collection of Issues
-*BoomtownApi.IssuesApi* | [**resolveIssue**](docs/IssuesApi.md#resolveIssue) | **POST** /issues/resolve/{issue_id} | Set a Issue to a resolved status
-*BoomtownApi.MerchantsApi* | [**createMember**](docs/MerchantsApi.md#createMember) | **POST** /members/create | Creates a new Merchant
-*BoomtownApi.MerchantsApi* | [**getMember**](docs/MerchantsApi.md#getMember) | **GET** /members/get/{member_id} | Returns a Merchant
-*BoomtownApi.MerchantsApi* | [**getMemberLocationUsers**](docs/MerchantsApi.md#getMemberLocationUsers) | **GET** /members/location/users/{member_id} | Returns a collection of MerchantUsers
-*BoomtownApi.MerchantsApi* | [**getMemberLocations**](docs/MerchantsApi.md#getMemberLocations) | **GET** /members/location/get/{member_id} | Returns a collection of MerchantLocations
-*BoomtownApi.MerchantsApi* | [**getMemberMetaIndustries**](docs/MerchantsApi.md#getMemberMetaIndustries) | **GET** /members/meta/industries | Returns collection of industries
-*BoomtownApi.MerchantsApi* | [**getMemberMetaStatuses**](docs/MerchantsApi.md#getMemberMetaStatuses) | **GET** /members/meta/statuses | Returns collection of statuses
-*BoomtownApi.MerchantsApi* | [**getMemberUsers**](docs/MerchantsApi.md#getMemberUsers) | **GET** /members/user/get/{member_id} | Returnsa a collection of MerchantUsers
-*BoomtownApi.ProvidersApi* | [**getProvider**](docs/ProvidersApi.md#getProvider) | **GET** /providers/get | Returns your Provider
-*BoomtownApi.ProvidersApi* | [**getProviderMembers**](docs/ProvidersApi.md#getProviderMembers) | **GET** /providers/members | Returns Merchants
-*BoomtownApi.ProvidersApi* | [**getProviderTeam**](docs/ProvidersApi.md#getProviderTeam) | **GET** /providers/teams/{provider_team_id} | Returns a ProviderTeam
-*BoomtownApi.ProvidersApi* | [**getProviderTeams**](docs/ProvidersApi.md#getProviderTeams) | **GET** /providers/teams | Returns your ProviderTeams
-
-
-## Documentation for Models
-
- - [BoomtownApi.BaseResponse](docs/BaseResponse.md)
- - [BoomtownApi.EnumerationItem](docs/EnumerationItem.md)
- - [BoomtownApi.EnumerationItemResponse](docs/EnumerationItemResponse.md)
- - [BoomtownApi.Error](docs/Error.md)
- - [BoomtownApi.Issue](docs/Issue.md)
- - [BoomtownApi.IssueLog](docs/IssueLog.md)
- - [BoomtownApi.IssueLogsResponse](docs/IssueLogsResponse.md)
- - [BoomtownApi.IssueResponse](docs/IssueResponse.md)
- - [BoomtownApi.IssueStatus](docs/IssueStatus.md)
- - [BoomtownApi.IssueStatusesResponse](docs/IssueStatusesResponse.md)
- - [BoomtownApi.Member](docs/Member.md)
- - [BoomtownApi.MemberCreateRequest](docs/MemberCreateRequest.md)
- - [BoomtownApi.MemberCreateResponse](docs/MemberCreateResponse.md)
- - [BoomtownApi.MemberLocation](docs/MemberLocation.md)
- - [BoomtownApi.MemberLocationResponse](docs/MemberLocationResponse.md)
- - [BoomtownApi.MemberResponse](docs/MemberResponse.md)
- - [BoomtownApi.MemberTuple](docs/MemberTuple.md)
- - [BoomtownApi.MemberUser](docs/MemberUser.md)
- - [BoomtownApi.MemberUserResponse](docs/MemberUserResponse.md)
- - [BoomtownApi.Provider](docs/Provider.md)
- - [BoomtownApi.ProviderResponse](docs/ProviderResponse.md)
- - [BoomtownApi.ProviderTeam](docs/ProviderTeam.md)
- - [BoomtownApi.ProviderTeamResponse](docs/ProviderTeamResponse.md)
-
-
-Cloud API documentation available at: [http://developers.goboomtown.com/](http://developers.goboomtown.com/)
