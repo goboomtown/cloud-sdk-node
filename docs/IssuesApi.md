@@ -92,9 +92,7 @@ BoomtownApi.ApiClient.instance.setApiSecret("YOUR_BOOMTOWN_SECRET");
 
 var api = new BoomtownApi.IssuesApi()
 
-var opts = { 
-  'issues': new BoomtownApi.Issue() // {Issue} Issue to create
-};
+var issue = new BoomtownApi.Issue(); // {Issue} Issue to create
 
 var callback = function(error, data, response) {
   if (error) {
@@ -103,7 +101,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-api.createIssue(opts, callback);
+api.createIssue(issue, callback);
 ```
 
 ### Parameters
