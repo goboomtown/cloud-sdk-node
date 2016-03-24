@@ -1,6 +1,3 @@
-// Public Key: 9F202C37C7249940386F
-// Private Key: 5b5577a123f1c1d7fa71edf4092430a4d79da959
-
 var BoomtownApi = require('./boomtown-api');
 /**
  * Initialize the ApiClient
